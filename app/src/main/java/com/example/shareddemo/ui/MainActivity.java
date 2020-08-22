@@ -1,4 +1,4 @@
-package com.example.shareddemo;
+package com.example.shareddemo.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
+import com.example.shareddemo.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -35,9 +37,10 @@ public class MainActivity extends AppCompatActivity {
                 SharedPreferences.Editor editor = sharedPreferences.edit();
                 editor.putString("email",et_email.getText().toString());
                 editor.putString("name",et_name.getText().toString());
+                editor.putInt("id",8);
                 editor.apply();
 
-                Intent intent = new Intent(MainActivity.this,Dashboard.class);
+                Intent intent = new Intent(MainActivity.this, Dashboard.class);
                 startActivity(intent);
             }
         });

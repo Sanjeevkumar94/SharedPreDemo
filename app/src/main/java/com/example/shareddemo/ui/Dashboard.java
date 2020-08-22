@@ -1,10 +1,13 @@
-package com.example.shareddemo;
+package com.example.shareddemo.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.TextView;
+
+import com.example.shareddemo.R;
+import com.example.shareddemo.ui.MainActivity;
 
 public class Dashboard extends AppCompatActivity {
 
